@@ -29,6 +29,7 @@ section.about,
 section.comment {
   min-width: 1080px;;
 }
+
 .flex {
   display: flex;
 }
@@ -431,25 +432,35 @@ footer .inner .flex .flex{
     position: relative;
     color: #111;
 }
+.main_menu:hover {
+  transition: .5s;
+  border-bottom: 3px solid rgb(35, 30, 191);
+}
 .sub_menu{
-  position: absolute;
+  position: fixed;
   background: #fff;
-  width: 200px;
+  width:50vw;
+  margin:0 calc(50% - 50vw);
   transform: translateY(-1500px);
   transition: .5s;
   z-index: -3;
-  right: -60px;
+  right: 0;
   top: -15px;
+}
+.sub_menu:nth-of-type(1) {
+  position: absolute;
+  right: 260px;
 }
 .sub_menu>li{
   margin-left: 0;
   margin-bottom: 10px;
+  display: block;
 }
 .sub_menu>li:nth-of-type(1) {
   margin-top: 10px;
 }
 .sub_menu>li:hover{
-  background:rgba(0, 89, 255, 0.672);;
+  background:rgba(0, 89, 255, 0.672);
 }
 .open{
   transform: translateY(95px);
