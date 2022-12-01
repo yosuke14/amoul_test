@@ -23,7 +23,12 @@ h4 {
   max-width: 1080px;
   margin: 50px auto 0;
 }
-
+section.work,
+section.blog,
+section.about,
+section.comment {
+  min-width: 1080px;;
+}
 .flex {
   display: flex;
 }
